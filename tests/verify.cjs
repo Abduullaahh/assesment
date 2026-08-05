@@ -80,7 +80,7 @@ console.log('\nHTML source requirements');
     ['Dedicated monthly in source', /data-plan="dedicated"[\s\S]*?data-price>19,500</],
     ['Most popular label', /Most popular/],
     ['Ten comparison rows', (h) => (h.match(/<tbody>[\s\S]*?<\/tbody>/)[0].match(/<tr>/g) || []).length === 10],
-    ['FAQ has 4+ items', (h) => (h.match(/<details>/g) || []).length >= 4],
+    ['FAQ has 4+ items', (h) => (h.match(/<details\b/g) || []).length >= 4],
     ['aria-live status region', /id="price-status"[^>]*aria-live="polite"/],
     ['No remote http(s) assets in markup', (h) => !/https?:\/\//.test(h.replace(/mailto:[^"']+/g, ''))],
     ['Local stylesheet only', /href="styles\.css"/],

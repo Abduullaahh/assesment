@@ -164,6 +164,76 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  const accordion = document.querySelector('[data-accordion]');
+  if (accordion) {
+    const items = [...accordion.querySelectorAll('.faq-item')];
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const openItem = (item) => {
+      item.open = true;
+      window.requestAnimationFrame(() => {
+        item.classList.add('is-open');
+      });
+    };
+
+    const closeItem = (item) => {
+      const panel = item.querySelector('.faq-panel');
+      item.classList.remove('is-open');
+
+      if (reduceMotion || !panel) {
+        item.open = false;
+        return;
+      }
+
+      let settled = false;
+      const finish = () => {
+        if (settled) {
+          return;
+        }
+        settled = true;
+        item.open = false;
+        panel.removeEventListener('transitionend', onEnd);
+      };
+
+      const onEnd = (event) => {
+        if (event.target === panel && event.propertyName === 'grid-template-rows') {
+          finish();
+        }
+      };
+
+      panel.addEventListener('transitionend', onEnd);
+      window.setTimeout(finish, 400);
+    };
+
+    items.forEach((item) => {
+      if (item.hasAttribute('open')) {
+        item.classList.add('is-open');
+      }
+
+      const summary = item.querySelector('summary');
+      if (!summary) {
+        return;
+      }
+
+      summary.addEventListener('click', (event) => {
+        event.preventDefault();
+        const willOpen = !item.classList.contains('is-open');
+
+        items.forEach((other) => {
+          if (other !== item && other.classList.contains('is-open')) {
+            closeItem(other);
+          }
+        });
+
+        if (willOpen) {
+          openItem(item);
+        } else {
+          closeItem(item);
+        }
+      });
+    });
+  }
+
   // Expose deterministic helpers for the small offline verification script.
   window.PKHostingPricing = Object.freeze({
     calculatePrice,
