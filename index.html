@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare four PKHosting VPS plans with transparent monthly and annual pricing.">
+  <meta name="theme-color" content="#071a2b">
+  <title>PKHosting VPS Hosting</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="PKHosting home">
+        <span class="brand-mark" aria-hidden="true">PK</span>
+        <span>Hosting</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#plans">Plans</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="button button-small button-outline header-cta" href="#plans">View plans</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">VPS hosting built for Pakistan</p>
+          <h1 id="hero-title">More control. More speed. <span>Your server.</span></h1>
+          <p class="hero-lede">Dedicated resources, NVMe storage and full root access with local support that speaks your language.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#plans">Choose your VPS</a>
+            <a class="text-link" href="#compare">Compare every feature <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="trust-list" aria-label="Service highlights">
+            <li>Full root access</li>
+            <li>99.9% uptime target</li>
+            <li>24/7 local support</li>
+          </ul>
+        </div>
+        <div class="server-visual" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="server-stack">
+            <div class="server-unit"><i></i><i></i><span></span></div>
+            <div class="server-unit"><i></i><i></i><span></span></div>
+            <div class="server-unit"><i></i><i></i><span></span></div>
+          </div>
+          <p><strong>NVMe</strong><span>Low-latency infrastructure</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans-section section" id="plans" aria-labelledby="plans-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Simple, transparent pricing</p>
+            <h2 id="plans-title">Pick the power you need</h2>
+            <p>Upgrade whenever your workload grows. No setup fee.</p>
+          </div>
+
+          <div class="pricing-controls" aria-label="Pricing options">
+            <fieldset class="period-toggle">
+              <legend class="sr-only">Billing period</legend>
+              <input type="radio" name="period" id="monthly" value="monthly" checked>
+              <label for="monthly">Monthly</label>
+              <input type="radio" name="period" id="annual" value="annual">
+              <label for="annual">Annually <span>2 months free</span></label>
+            </fieldset>
+            <label class="currency-control" for="currency">
+              <span class="sr-only">Currency</span>
+              <select id="currency" name="currency">
+                <option value="PKR" selected>PKR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <noscript>
+          <p class="notice">JavaScript is off. Monthly prices are shown in PKR; all plan details remain available.</p>
+        </noscript>
+        <p class="sr-only" id="price-status" aria-live="polite" aria-atomic="true"></p>
+
+        <div class="plan-grid">
+          <article class="plan-card" data-plan="starter" aria-labelledby="starter-title">
+            <div class="plan-top">
+              <p class="plan-kicker">For new projects</p>
+              <h3 id="starter-title">Starter</h3>
+              <p class="plan-summary">A clean launchpad for personal sites, APIs and staging.</p>
+            </div>
+            <div class="price-block">
+              <p class="price"><span class="currency-symbol">Rs</span><strong data-price>2,400</strong><span class="price-period">/mo</span></p>
+              <p class="billing-detail" data-billing-detail>Pay monthly</p>
+              <p class="savings" data-savings hidden></p>
+            </div>
+            <ul class="feature-list">
+              <li><strong>2</strong> vCPU cores</li>
+              <li><strong>4 GB</strong> RAM</li>
+              <li><strong>60 GB</strong> NVMe storage</li>
+              <li><strong>2 TB</strong> bandwidth</li>
+              <li>1 IPv4 address</li>
+            </ul>
+            <a class="button button-plan" href="#contact">Choose Starter</a>
+          </article>
+
+          <article class="plan-card popular" data-plan="growth" aria-labelledby="growth-title">
+            <p class="popular-label">Most popular</p>
+            <div class="plan-top">
+              <p class="plan-kicker">For growing products</p>
+              <h3 id="growth-title">Growth</h3>
+              <p class="plan-summary">Balanced resources for production apps and busy stores.</p>
+            </div>
+            <div class="price-block">
+              <p class="price"><span class="currency-symbol">Rs</span><strong data-price>4,800</strong><span class="price-period">/mo</span></p>
+              <p class="billing-detail" data-billing-detail>Pay monthly</p>
+              <p class="savings" data-savings hidden></p>
+            </div>
+            <ul class="feature-list">
+              <li><strong>4</strong> vCPU cores</li>
+              <li><strong>8 GB</strong> RAM</li>
+              <li><strong>120 GB</strong> NVMe storage</li>
+              <li><strong>4 TB</strong> bandwidth</li>
+              <li>1 IPv4 address</li>
+            </ul>
+            <a class="button button-plan button-primary" href="#contact">Choose Growth</a>
+          </article>
+
+          <article class="plan-card" data-plan="scale" aria-labelledby="scale-title">
+            <div class="plan-top">
+              <p class="plan-kicker">For heavy workloads</p>
+              <h3 id="scale-title">Scale</h3>
+              <p class="plan-summary">More headroom for high traffic and data-heavy services.</p>
+            </div>
+            <div class="price-block">
+              <p class="price"><span class="currency-symbol">Rs</span><strong data-price>9,600</strong><span class="price-period">/mo</span></p>
+              <p class="billing-detail" data-billing-detail>Pay monthly</p>
+              <p class="savings" data-savings hidden></p>
+            </div>
+            <ul class="feature-list">
+              <li><strong>8</strong> vCPU cores</li>
+              <li><strong>16 GB</strong> RAM</li>
+              <li><strong>240 GB</strong> NVMe storage</li>
+              <li><strong>8 TB</strong> bandwidth</li>
+              <li>2 IPv4 addresses</li>
+            </ul>
+            <a class="button button-plan" href="#contact">Choose Scale</a>
+          </article>
+
+          <article class="plan-card" data-plan="dedicated" aria-labelledby="dedicated-title">
+            <div class="plan-top">
+              <p class="plan-kicker">For critical systems</p>
+              <h3 id="dedicated-title">Dedicated Core</h3>
+              <p class="plan-summary">Dedicated compute for predictable, isolated performance.</p>
+            </div>
+            <div class="price-block">
+              <p class="price"><span class="currency-symbol">Rs</span><strong data-price>19,500</strong><span class="price-period">/mo</span></p>
+              <p class="billing-detail" data-billing-detail>Pay monthly</p>
+              <p class="savings" data-savings hidden></p>
+            </div>
+            <ul class="feature-list">
+              <li><strong>8</strong> dedicated cores</li>
+              <li><strong>32 GB</strong> RAM</li>
+              <li><strong>480 GB</strong> NVMe storage</li>
+              <li><strong>12 TB</strong> bandwidth</li>
+              <li>3 IPv4 addresses</li>
+            </ul>
+            <a class="button button-plan" href="#contact">Choose Dedicated</a>
+          </article>
+        </div>
+        <p class="rate-note">Currency estimates use fixed rates: 1 USD = 278.50 PKR and 1 GBP = 355.00 PKR.</p>
+      </div>
+    </section>
+
+    <section class="comparison-section section" id="compare" aria-labelledby="compare-title">
+      <div class="shell">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Side-by-side</p>
+            <h2 id="compare-title">Compare all VPS plans</h2>
+            <p>Every plan includes instant provisioning and a choice of Linux image.</p>
+          </div>
+        </div>
+        <p class="scroll-hint" id="table-hint">Swipe or scroll sideways to see every plan <span aria-hidden="true">→</span></p>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="compare-title" aria-describedby="table-hint">
+          <table>
+            <caption class="sr-only">Features included in each PKHosting VPS plan</caption>
+            <thead>
+              <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">Starter</th>
+                <th scope="col">Growth <span>Popular</span></th>
+                <th scope="col">Scale</th>
+                <th scope="col">Dedicated Core</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">vCPU</th><td>2 cores</td><td>4 cores</td><td>8 cores</td><td>8 dedicated cores</td></tr>
+              <tr><th scope="row">Memory</th><td>4 GB</td><td>8 GB</td><td>16 GB</td><td>32 GB</td></tr>
+              <tr><th scope="row">NVMe storage</th><td>60 GB</td><td>120 GB</td><td>240 GB</td><td>480 GB</td></tr>
+              <tr><th scope="row">Monthly bandwidth</th><td>2 TB</td><td>4 TB</td><td>8 TB</td><td>12 TB</td></tr>
+              <tr><th scope="row">Network port</th><td>500 Mbps</td><td>1 Gbps</td><td>1 Gbps</td><td>2 Gbps</td></tr>
+              <tr><th scope="row">IPv4 addresses</th><td>1</td><td>1</td><td>2</td><td>3</td></tr>
+              <tr><th scope="row">Root access</th><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td></tr>
+              <tr><th scope="row">Backups</th><td>Weekly</td><td>Daily</td><td>Daily</td><td>Daily + snapshots</td></tr>
+              <tr><th scope="row">DDoS protection</th><td>Standard</td><td>Standard</td><td>Advanced</td><td>Advanced</td></tr>
+              <tr><th scope="row">Support priority</th><td>Standard</td><td>Priority</td><td>Priority</td><td>Dedicated queue</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="assurance section" aria-labelledby="assurance-title">
+      <div class="shell">
+        <div class="section-heading centered compact">
+          <p class="eyebrow">A better server experience</p>
+          <h2 id="assurance-title">The essentials are already included</h2>
+        </div>
+        <div class="assurance-grid">
+          <article><span aria-hidden="true">01</span><h3>Fast NVMe storage</h3><p>Responsive disks for databases, applications and busy websites.</p></article>
+          <article><span aria-hidden="true">02</span><h3>Full control</h3><p>Root access and your choice of Linux distribution from day one.</p></article>
+          <article><span aria-hidden="true">03</span><h3>Local support</h3><p>Reach a Pakistan-based team when setup or troubleshooting gets complex.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section" id="faq" aria-labelledby="faq-title">
+      <div class="shell faq-grid">
+        <div>
+          <p class="eyebrow">Questions, answered</p>
+          <h2 id="faq-title">VPS hosting FAQ</h2>
+          <p>Still deciding? Our team can help match resources to your workload.</p>
+          <a class="text-link" href="#contact">Talk to a VPS specialist <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What is VPS hosting?</summary>
+            <p>A virtual private server gives you reserved CPU, memory and storage inside an isolated environment. It offers more control and predictable performance than shared hosting.</p>
+          </details>
+          <details>
+            <summary>Can I upgrade my plan later?</summary>
+            <p>Yes. You can move to a larger plan as demand grows. A support specialist will confirm the maintenance window and migration steps before making changes.</p>
+          </details>
+          <details>
+            <summary>Which operating systems can I use?</summary>
+            <p>Choose from current Ubuntu, Debian, AlmaLinux and Rocky Linux images. Other compatible Linux distributions can be arranged during provisioning.</p>
+          </details>
+          <details>
+            <summary>How does annual billing work?</summary>
+            <p>You receive 12 months of service for the cost of 10. The cards show the effective monthly amount, while the full annual total is charged upfront.</p>
+          </details>
+          <details>
+            <summary>Is the VPS managed?</summary>
+            <p>Plans are self-managed by default and include infrastructure support. Managed server administration can be quoted separately for teams that need hands-on help.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta" id="contact" aria-labelledby="cta-title">
+      <div class="shell cta-inner">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2 id="cta-title">Put your next project on stronger ground.</h2>
+        </div>
+        <a class="button button-light" href="mailto:sales@pkhosting.com">Contact sales</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="PKHosting home">
+            <span class="brand-mark" aria-hidden="true">PK</span><span>Hosting</span>
+          </a>
+          <p>Practical infrastructure and local support for Pakistani businesses.</p>
+        </div>
+        <div class="payment-block">
+          <h2>Ways to pay</h2>
+          <ul class="payment-list" aria-label="Accepted payment methods">
+            <li>Visa</li>
+            <li>Mastercard</li>
+            <li>Bank transfer</li>
+            <li>Easypaisa</li>
+            <li>JazzCash</li>
+            <li>PayPal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PKHosting. Assessment concept only.</p>
+        <p>Prices exclude applicable taxes.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
