@@ -27,6 +27,8 @@ Works offline. Reloading keeps your billing period and currency via `localStorag
 | `reports/` | Committed Lighthouse run |
 | `tests/verify.cjs` | Offline checks for pricing math and HTML source requirements |
 | `favicon.svg` | Tiny local favicon (no remote assets) |
+| `logo.svg` / `logo-mark.svg` | Local brand wordmark and icon mark |
+| `assets/payments/` | Local SVG payment marks (Visa, Mastercard, bank, Easypaisa, JazzCash, PayPal) |
 
 ## Pricing rules (checked in code)
 

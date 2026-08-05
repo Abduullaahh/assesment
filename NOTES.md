@@ -32,7 +32,7 @@ Period and currency are stored in `localStorage` under `pkhosting-vps-pricing` a
 
 Live footer icons observed: **Stripe, PayPal, JazzCash, Easypaisa, Bank account** (five). Older public payment copy also described **credit/debit cards**, **bank transfer/deposit**, and **cash at the Lahore office**. The brief referenced eight methods; treating Stripe as the card gateway, Visa and Mastercard as the card brands shoppers recognise, plus PayPal, JazzCash, Easypaisa, bank transfer, and office cash gets you to eight logical options.
 
-**Kept (six text labels):**
+**Kept (six methods with local SVG icons):**
 
 | Method | Why |
 | --- | --- |
@@ -50,4 +50,4 @@ Live footer icons observed: **Stripe, PayPal, JazzCash, Easypaisa, Bank account*
 | Stripe (brand) | Redundant once Visa/Mastercard are listed; Stripe is the processor, not what a Pakistani buyer asks for. |
 | Cash deposit at office | Offline-only, Lahore-centric, and a poor fit for a VPS product that can be provisioned remotely. Keeps the footer honest for national buyers. |
 
-No hotlinked logos - text chips only, so the page stays offline and under the size budget.
+Payment marks live in `assets/payments/` as original local SVGs — no hotlinked logos, so the page stays offline and self-contained.

@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="PK">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="PK Hosting">
+  <defs>
+    <linearGradient id="g" x1="5" y1="2" x2="27" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e4ff8a"/>
+      <stop offset="1" stop-color="#b9ee5a"/>
+    </linearGradient>
+  </defs>
   <rect width="32" height="32" rx="8" fill="#071a2b"/>
-  <rect x="4" y="4" width="24" height="24" rx="6" fill="#b9ee5a"/>
-  <text x="16" y="22" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="800" fill="#071a2b">PK</text>
+  <rect x="4.5" y="4.5" width="23" height="23" rx="6" fill="url(#g)"/>
+  <g fill="#071a2b">
+    <rect x="9" y="9.8" width="14" height="3.3" rx="1.1"/>
+    <rect x="9" y="14.35" width="14" height="3.3" rx="1.1"/>
+    <rect x="9" y="18.9" width="9" height="3.3" rx="1.1"/>
+  </g>
+  <circle cx="21.3" cy="20.55" r="2.6" fill="#05645f"/>
+  <circle cx="21.3" cy="20.55" r="1.05" fill="#071a2b"/>
+  <path d="M23.5 18.5c1.2.8 1.2 2.45 0 3.25" stroke="#05645f" stroke-width="1.2" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 40" fill="none" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">PK Hosting</title>
+  <defs>
+    <linearGradient id="pkGlow" x1="6" y1="2" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e4ff8a"/>
+      <stop offset="1" stop-color="#b9ee5a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App mark -->
+  <rect width="40" height="40" rx="11" fill="#071a2b"/>
+  <rect x="1" y="1" width="38" height="38" rx="10" stroke="#23475f" stroke-width="1"/>
+  <rect x="5.5" y="5.5" width="29" height="29" rx="7.5" fill="url(#pkGlow)"/>
+
+  <!-- Abstract server + signal: reads as infrastructure, not plain letters -->
+  <g fill="#071a2b">
+    <rect x="11" y="12.2" width="18" height="4.2" rx="1.4"/>
+    <rect x="11" y="17.9" width="18" height="4.2" rx="1.4"/>
+    <rect x="11" y="23.6" width="11.5" height="4.2" rx="1.4"/>
+  </g>
+  <circle cx="26.8" cy="25.7" r="3.35" fill="#05645f"/>
+  <circle cx="26.8" cy="25.7" r="1.35" fill="#071a2b"/>
+  <path d="M29.6 23.1c1.55 1.05 1.55 3.15 0 4.2" stroke="#05645f" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M31.7 21.5c2.55 1.7 2.55 5.3 0 7" stroke="#05645f" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Wordmark -->
+  <text x="52" y="27" fill="#f5f9fb" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="19" font-weight="800" letter-spacing="-0.045em">PK Hosting</text>
+</svg>

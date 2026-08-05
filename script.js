@@ -142,6 +142,28 @@
 
   render({ announce: false });
 
+  const siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    let ticking = false;
+
+    const syncHeader = () => {
+      siteHeader.classList.toggle('is-scrolled', window.scrollY > 12);
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (ticking) {
+        return;
+      }
+
+      ticking = true;
+      window.requestAnimationFrame(syncHeader);
+    };
+
+    syncHeader();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
   // Expose deterministic helpers for the small offline verification script.
   window.PKHostingPricing = Object.freeze({
     calculatePrice,
