@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="PK">
+  <rect width="32" height="32" rx="8" fill="#071a2b"/>
+  <rect x="4" y="4" width="24" height="24" rx="6" fill="#b9ee5a"/>
+  <text x="16" y="22" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="800" fill="#071a2b">PK</text>
+</svg>

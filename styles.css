@@ -275,7 +275,7 @@ nav a:hover {
 
 .eyebrow {
   margin-bottom: .8rem;
-  color: var(--teal);
+  color: var(--teal-dark);
   font-size: .76rem;
   font-weight: 900;
   letter-spacing: .13em;
@@ -283,7 +283,8 @@ nav a:hover {
 }
 
 .hero .eyebrow,
-.closing-cta .eyebrow {
+.closing-cta .eyebrow,
+.assurance .eyebrow {
   color: var(--lime);
 }
 

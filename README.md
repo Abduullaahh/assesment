@@ -1,4 +1,4 @@
-# PKHosting VPS Hosting — Assessment
+# PKHosting VPS Hosting - Assessment
 
 A single static pricing page for an invented PKHosting VPS line. Plain HTML, CSS and JavaScript. No build step, no packages, no APIs, no deploy.
 
@@ -25,7 +25,8 @@ Works offline. Reloading keeps your billing period and currency via `localStorag
 | `NOTES.md` | Live pkhosting.com audit and payment trade-offs |
 | `screenshots/` | 360 / 768 / 1440 viewport captures |
 | `reports/` | Committed Lighthouse run |
-| `tests/verify.mjs` | Offline checks for pricing math and HTML source requirements |
+| `tests/verify.cjs` | Offline checks for pricing math and HTML source requirements |
+| `favicon.svg` | Tiny local favicon (no remote assets) |
 
 ## Pricing rules (checked in code)
 
@@ -49,19 +50,19 @@ Works offline. Reloading keeps your billing period and currency via `localStorag
 ## Decisions and trade-offs
 
 - Progressive enhancement: controls enhance the page; they do not own the content.
-- System / UI fonts only — no webfont downloads.
+- System / UI fonts only - no webfont downloads.
 - Payment methods as text chips (see `NOTES.md`); no remote logos.
 - `aria-live` status region announces price changes after period or currency changes.
-- Savings and annual totals are never hard-typed in the annual UI state — they are calculated.
+- Savings and annual totals are never hard-typed in the annual UI state - they are calculated.
 
 ## Verification
 
 ```bash
-node tests/verify.mjs
+node tests/verify.cjs
 ```
 
 Screenshots: `screenshots/pricing-360.png`, `screenshots/pricing-768.png`, `screenshots/pricing-1440.png`  
-Lighthouse: `reports/lighthouse.html` (and JSON beside it)
+Lighthouse: `reports/lighthouse.report.html` (and `.report.json` beside it)
 
 ## What is unfinished
 
@@ -76,4 +77,4 @@ About 5 hours of focused work (layout, pricing logic, a11y, audit notes, screens
 
 ## AI assistant disclosure
 
-Yes — I used Cursor’s AI coding assistant while building and reviewing this page. I directed the structure, pricing rules, accessibility requirements, and documentation; I reviewed and can explain every file in a follow-up call.
+Yes - I used Cursor’s AI coding assistant while building and reviewing this page. I directed the structure, pricing rules, accessibility requirements, and documentation; I reviewed and can explain every file in a follow-up call.
