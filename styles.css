@@ -638,6 +638,10 @@ nav a:hover {
   font-weight: 850;
 }
 
+.savings[hidden] {
+  display: none;
+}
+
 .feature-list {
   margin: 0 0 1.5rem;
   padding: 0;
