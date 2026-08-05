@@ -30,13 +30,19 @@
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span class="hero-beam"></span>
+        <span class="hero-orb hero-orb-a"></span>
+        <span class="hero-orb hero-orb-b"></span>
+      </div>
+
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">VPS hosting built for Pakistan</p>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>VPS hosting built for Pakistan</p>
           <h1 id="hero-title">More control. More speed. <span>Your server.</span></h1>
           <p class="hero-lede">Dedicated resources, NVMe storage and full root access with local support that speaks your language.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#plans">Choose your VPS</a>
+            <a class="button button-primary hero-cta" href="#plans">Choose your VPS</a>
             <a class="text-link" href="#compare">Compare every feature <span aria-hidden="true">→</span></a>
           </div>
           <ul class="trust-list" aria-label="Service highlights">
@@ -45,29 +51,58 @@
             <li>24/7 local support</li>
           </ul>
         </div>
+
         <div class="server-visual" aria-hidden="true">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
-          <div class="server-stack">
-            <div class="server-unit"><i></i><i></i><span></span></div>
-            <div class="server-unit"><i></i><i></i><span></span></div>
-            <div class="server-unit"><i></i><i></i><span></span></div>
+          <div class="orbit orbit-three"></div>
+
+          <div class="server-stage">
+            <div class="server-stack">
+              <div class="server-unit">
+                <div class="unit-lights"><i></i><i></i></div>
+                <span class="unit-bus"></span>
+                <em>node-01</em>
+              </div>
+              <div class="server-unit">
+                <div class="unit-lights"><i></i><i></i></div>
+                <span class="unit-bus"></span>
+                <em>node-02</em>
+              </div>
+              <div class="server-unit is-active">
+                <div class="unit-lights"><i></i><i></i></div>
+                <span class="unit-bus"></span>
+                <em>node-03</em>
+              </div>
+            </div>
+
+            <div class="hero-chip hero-chip-nvme">
+              <strong>NVMe</strong>
+              <span>Low-latency infrastructure</span>
+            </div>
+            <div class="hero-chip hero-chip-root">
+              <strong>root@vps</strong>
+              <span>Full access ready</span>
+            </div>
+            <div class="hero-chip hero-chip-live">
+              <i></i>
+              <span>Live in minutes</span>
+            </div>
           </div>
-          <p><strong>NVMe</strong><span>Low-latency infrastructure</span></p>
         </div>
       </div>
     </section>
 
     <section class="plans-section section" id="plans" aria-labelledby="plans-title">
       <div class="shell">
-        <div class="section-heading">
+        <div class="plans-head">
           <div>
             <p class="eyebrow">Simple, transparent pricing</p>
             <h2 id="plans-title">Pick the power you need</h2>
-            <p>Upgrade whenever your workload grows. No setup fee.</p>
+            <p class="plans-lede">Upgrade whenever your workload grows. No setup fee — every plan includes root access and NVMe storage.</p>
           </div>
 
-          <div class="pricing-controls" aria-label="Pricing options">
+          <div class="pricing-toolbar" aria-label="Pricing options">
             <fieldset class="period-toggle">
               <legend class="sr-only">Billing period</legend>
               <input type="radio" name="period" id="monthly" value="monthly" checked>
@@ -93,10 +128,14 @@
 
         <div class="plan-grid">
           <article class="plan-card" data-plan="starter" aria-labelledby="starter-title">
+            <div class="plan-glow" aria-hidden="true"></div>
             <div class="plan-top">
               <p class="plan-kicker">For new projects</p>
               <h3 id="starter-title">Starter</h3>
               <p class="plan-summary">A clean launchpad for personal sites, APIs and staging.</p>
+              <div class="plan-meter" aria-hidden="true" title="Relative power">
+                <span class="is-on"></span><span></span><span></span><span></span>
+              </div>
             </div>
             <div class="price-block">
               <p class="price"><span class="currency-symbol">Rs</span><strong data-price>2,400</strong><span class="price-period">/mo</span></p>
@@ -115,10 +154,14 @@
 
           <article class="plan-card popular" data-plan="growth" aria-labelledby="growth-title">
             <p class="popular-label">Most popular</p>
+            <div class="plan-glow" aria-hidden="true"></div>
             <div class="plan-top">
               <p class="plan-kicker">For growing products</p>
               <h3 id="growth-title">Growth</h3>
               <p class="plan-summary">Balanced resources for production apps and busy stores.</p>
+              <div class="plan-meter" aria-hidden="true" title="Relative power">
+                <span class="is-on"></span><span class="is-on"></span><span></span><span></span>
+              </div>
             </div>
             <div class="price-block">
               <p class="price"><span class="currency-symbol">Rs</span><strong data-price>4,800</strong><span class="price-period">/mo</span></p>
@@ -136,10 +179,14 @@
           </article>
 
           <article class="plan-card" data-plan="scale" aria-labelledby="scale-title">
+            <div class="plan-glow" aria-hidden="true"></div>
             <div class="plan-top">
               <p class="plan-kicker">For heavy workloads</p>
               <h3 id="scale-title">Scale</h3>
               <p class="plan-summary">More headroom for high traffic and data-heavy services.</p>
+              <div class="plan-meter" aria-hidden="true" title="Relative power">
+                <span class="is-on"></span><span class="is-on"></span><span class="is-on"></span><span></span>
+              </div>
             </div>
             <div class="price-block">
               <p class="price"><span class="currency-symbol">Rs</span><strong data-price>9,600</strong><span class="price-period">/mo</span></p>
@@ -157,10 +204,14 @@
           </article>
 
           <article class="plan-card" data-plan="dedicated" aria-labelledby="dedicated-title">
+            <div class="plan-glow" aria-hidden="true"></div>
             <div class="plan-top">
               <p class="plan-kicker">For critical systems</p>
               <h3 id="dedicated-title">Dedicated Core</h3>
               <p class="plan-summary">Dedicated compute for predictable, isolated performance.</p>
+              <div class="plan-meter" aria-hidden="true" title="Relative power">
+                <span class="is-on"></span><span class="is-on"></span><span class="is-on"></span><span class="is-on"></span>
+              </div>
             </div>
             <div class="price-block">
               <p class="price"><span class="currency-symbol">Rs</span><strong data-price>19,500</strong><span class="price-period">/mo</span></p>
